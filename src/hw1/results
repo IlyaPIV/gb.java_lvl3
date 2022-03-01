@@ -1,0 +1,22 @@
+"C:\Program Files\Java\jdk-17.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\lib\idea_rt.jar=63652:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath D:\Java\java_lvl3\out\production\java_lvl3 hw1.Main
+============ TASK #1 ============
+[1, 2, 5, 4, 3]
+[a, d, c, b, e]
+[раму, мыла, мама]
+============ TASK #2 ============
+[1, 2, 3, 4, 5]
+[a, b, c, d, e]
+[мама, мыла, раму]
+============ TASK #3 ============
+Box{label=Эпплы #1, fruits='[Apple{weight=0.3}, Apple{weight=0.17}, Apple{weight=0.16}, Apple{weight=0.3}]'}
+Box{label=Эпплы #2, fruits='[Apple{weight=0.23}]'}
+Box{label=Липисины #1, fruits='[Orange{weight=0.11}, Orange{weight=0.12}]'}
+Коробка Эпплы #1 равна коробке Эпплы #2? : false
+Коробка Эпплы #2 равна коробке Липисины #1? : true
+Нельзя пересыпать class hw1.task3.Apple в коробку с class hw1.task3.Orange
+Фрукты из Эпплы #1 пересыпаны успешно в Эпплы #2.
+Box{label=Эпплы #1, fruits='[]'}
+Box{label=Эпплы #2, fruits='[Apple{weight=0.23}, Apple{weight=0.3}, Apple{weight=0.17}, Apple{weight=0.16}, Apple{weight=0.3}]'}
+Box{label=Липисины #1, fruits='[Orange{weight=0.11}, Orange{weight=0.12}]'}
+
+Process finished with exit code 0
