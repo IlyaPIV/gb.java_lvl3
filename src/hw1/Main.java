@@ -22,10 +22,6 @@ public class Main {
 
         System.out.println("============ TASK #1 ============");
 
-        Integer[] array1 = new Integer[]{1,2,3,4,5};
-        Character[] array2 = new Character[]{'a','b','c','d','e'};
-        String[] array3 = new String[]{"мама","мыла","раму"};
-
         TasksForArray<Integer> tempArray1 = new TasksForArray<>(new Integer[]{1,2,3,4,5});
         TasksForArray<Character> tempArray2 = new TasksForArray<>(new Character[]{'a','b','c','d','e'});
         TasksForArray<String> tempArray3 = new TasksForArray<>(new String[]{"мама","мыла","раму"});
@@ -75,9 +71,9 @@ public class Main {
         box3.addFruit(new Orange(0.11f));
         box3.addFruit(new Orange(0.12f));
 
-        System.out.println(box1.toString());
-        System.out.println(box2.toString());
-        System.out.println(box3.toString());
+        System.out.println(box1);
+        System.out.println(box2);
+        System.out.println(box3);
 
         System.out.printf("Коробка %s равна коробке %s? : %b\n",box1.getLabel(), box2.getLabel(), box1.compare(box2));
         System.out.printf("Коробка %s равна коробке %s? : %b\n",box2.getLabel(), box3.getLabel(), box2.compare(box3));
@@ -85,9 +81,9 @@ public class Main {
         box1.removeFruits(box3);
         box1.removeFruits(box2);
 
-        System.out.println(box1.toString());
-        System.out.println(box2.toString());
-        System.out.println(box3.toString());
+        System.out.println(box1);
+        System.out.println(box2);
+        System.out.println(box3);
 
     }
 
@@ -115,10 +111,7 @@ public class Main {
 
             arrayList = new ArrayList<>();
 
-            for (T element:
-                 array) {
-                arrayList.add(element);
-            }
+            arrayList.addAll(Arrays.asList(array));
         }
 
         public T[] getArray() {
