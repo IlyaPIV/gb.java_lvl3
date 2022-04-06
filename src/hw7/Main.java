@@ -75,9 +75,7 @@ public class Main {
         System.out.println("---------> ВЫПОЛНЕНИЕ МЕТОДОВ:");
         try {
             mBefore.get(0).invoke(obj);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 
@@ -88,9 +86,7 @@ public class Main {
 
                 try {
                     method.invoke(obj);
-                } catch (IllegalAccessException e) {
-                    e.printStackTrace();
-                } catch (InvocationTargetException e) {
+                } catch (IllegalAccessException | InvocationTargetException e) {
                     e.printStackTrace();
                 }
             }
@@ -98,9 +94,7 @@ public class Main {
 
         try {
             mAfter.get(0).invoke(obj);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
     }
