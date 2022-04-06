@@ -64,7 +64,7 @@ public class Main {
         System.out.println("---------> СОРТИРОВКА МЕТОДОВ ПО АННОТАЦИЯМ:");
         System.out.println("Кол-во методов Before = "+mBefore.size());
         System.out.println("Кол-во методов Tests = "+mTests.size());
-        System.out.println("Кол-во методов Before = "+mAfter.size());
+        System.out.println("Кол-во методов After = "+mAfter.size());
     }
 
     private static void completeMethods(Object obj, List<Method> mBefore, Map<Integer,List<Method>> mTests, List<Method> mAfter) throws RuntimeException {
